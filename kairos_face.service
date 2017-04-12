@@ -1,0 +1,12 @@
+[Unit]
+Description=Kairos face recognition server program
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/screen -dmS kairos_face /mnt/media/project/kairos-face/Tornado-mjpeg-streamer-python-master/dist/start /mnt/media/project/kairos-face/Tornado-mjpeg-streamer-python-master/dist/config.ini
+ExecStop=/usr/bin/screen -S kairos_face -X quit
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

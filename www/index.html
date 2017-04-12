@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>KAIROS FACEX</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+</head>
+<body background="/image/bg.jpg">
+    <br>
+    <h1 class="title">FACEX</h1>
+	
+    <div class="container-fluid">
+        <div class="row" align="center">
+            <img id="videofield" class="video" src="\video_feed?fd=false">
+            <!--
+			<br><br>
+            <div class="btn-group">
+                <a href="#" class="btn btn-primary my" id="low">Resolution low</a>
+                <a href="#" class="btn btn-primary my" id="norm">Resolution medium</a>
+                <a href="#" class="btn btn-primary my" id="hi">Resolution hi</a>
+            </div>
+			-->            
+        </div>
+		
+		<div class="row" align="center">
+			<!--
+			<p>Face : <input name="agree" type="checkbox"></p>
+			-->
+			<br/>
+			<div class="btn-group">
+                <a href="#" class="btn btn-primary my" id="face-recog" onclick="faceCommand(1);" data-toggle="tooltip" data-placement="top" title="Recognize face"><span class="glyphicon glyphicon-user"></span></a>
+				
+                <a href="#" class="btn btn-primary my" id="face-enroll" onclick="faceCommand(2);" data-toggle="tooltip" data-placement="top" title="Enroll face"><span class="glyphicon glyphicon-plus"></span></a>
+				
+                <a href="#" class="btn btn-primary my" id="face-clear" onclick="faceCommand(3);" data-toggle="tooltip" data-placement="top" title="Delete all faces"><span class="glyphicon glyphicon-trash"></span></a>
+				
+				<a href="#" class="btn btn-primary my" id="face-view-subject" onclick="faceCommand(4);" data-toggle="tooltip" data-placement="top" title="View enrolled faces"><span class="glyphicon glyphicon-list-alt"></span></a>
+            </div>
+		</div>
+    </div>
+	
+	<script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap-checkbox.min.js"></script>
+	<script src="/js/bootbox.min.js"></script>
+	<script src="/js/main.js" ></script>
+</body>
+</html>

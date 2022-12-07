@@ -1,5 +1,5 @@
 backports-abc==0.5
-certifi==2016.9.26
+certifi==2022.12.7
 gen==0.1
 PyYAML==5.4
 singledispatch==3.4.0.3
